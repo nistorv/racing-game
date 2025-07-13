@@ -49,7 +49,7 @@ This project is a golf cart racing game built using JavaFX. Your uncle has just 
 4. Once the project is open in IntelliJ. Navigate to *code -> App.class* then run App.class to startup the game.
 5. To run the project, run the following command:
     ```bash
-    java seng201/team0/App
+    java code/App
     ```
 
    

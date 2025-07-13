@@ -5,7 +5,7 @@ plugins {
     id 'jacoco'
 }
 
-archivesBaseName = 'seng201_team0'
+archivesBaseName = 'racing-game-project'
 group = 'code'
 version = '1.0-SNAPSHOT'
 mainClassName = 'code.App'
