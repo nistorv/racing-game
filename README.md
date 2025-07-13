@@ -9,9 +9,8 @@ This project is a golf cart racing game built using JavaFX. Your uncle has just 
 ---
 
 ## Authors
-
-- Thomas Eggers
-- Vlad Nistor
+- Tom Eggers - [LinkedIn](https://www.linkedin.com/in/tom-eggers-46a638259/) | [Github](https://github.com/tomeggers) | [Website](https://tomeggers.github.io)
+- Vlad Nistor - [LinkedIn](https://www.linkedin.com/in/nistorv/) | [Github](https://github.com/nistorv) | [Website](https://nistorv.me)
 
 ---
 
