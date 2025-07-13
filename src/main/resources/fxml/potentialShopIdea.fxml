@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/21.0.2" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+    <Tab text="Cart Shop">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="543.0" minWidth="10.0" prefWidth="413.5" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="291.0" minWidth="10.0" prefWidth="186.5" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="207.0" minHeight="0.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="350.0" minHeight="10.0" prefHeight="310.5" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="214.0" minHeight="10.0" prefHeight="49.5" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="295.0" fitWidth="553.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                           <image>
+                              <Image url="@../images/default_cart.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Pimp My Cart" textAlignment="CENTER" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+                           <font>
+                              <Font name="Lucida Bright Italic" size="27.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Button fx:id="nextCart" mnemonicParsing="false" text="&gt;" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                           <GridPane.margin>
+                              <Insets right="20.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="prevCart" mnemonicParsing="false" text="&lt;" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                           <GridPane.margin>
+                              <Insets left="20.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Label fx:id="golfCartNameWithPrice" text="Golf cart name with price" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                           <padding>
+                              <Insets top="15.0" />
+                           </padding>
+                        </Label>
+                        <Button fx:id="goToPreviousPage" maxWidth="55.0" mnemonicParsing="false" text="Back" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets left="20.0" />
+                           </GridPane.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Label alignment="TOP_CENTER" text="Stats" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                           <font>
+                              <Font name="Lucida Bright" size="16.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="buyCart" mnemonicParsing="false" text="Purchase" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                           <GridPane.margin>
+                              <Insets right="20.0" top="10.0" />
+                           </GridPane.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Label fx:id="fuelCapacityNumValue" text="Fuel capacity x" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                           <GridPane.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ProgressBar fx:id="fuelCapacityProgBar" maxHeight="20.0" prefWidth="200.0" progress="0.44" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                           <GridPane.margin>
+                              <Insets left="10.0" right="10.0" top="30.0" />
+                           </GridPane.margin>
+                        </ProgressBar>
+                        <Label fx:id="fuelEconomyNumValue" text="Fuel economy x" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                           <GridPane.margin>
+                              <Insets left="10.0" top="60.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ProgressBar fx:id="fuelEconomyProgBar" maxHeight="20.0" prefWidth="200.0" progress="0.44" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                           <GridPane.margin>
+                              <Insets top="80.0" />
+                           </GridPane.margin>
+                        </ProgressBar>
+                        <ProgressBar fx:id="topSpeedProgBar" maxHeight="20.0" prefWidth="200.0" progress="0.44" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                           <GridPane.margin>
+                              <Insets top="130.0" />
+                           </GridPane.margin>
+                        </ProgressBar>
+                        <Label fx:id="topSpeedNumValue" text="Top speed x" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                           <GridPane.margin>
+                              <Insets bottom="80.0" left="10.0" top="110.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ProgressBar fx:id="accelerationProgBar" maxHeight="20.0" prefWidth="200.0" progress="0.44" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                           <GridPane.margin>
+                              <Insets top="180.0" />
+                           </GridPane.margin>
+                        </ProgressBar>
+                        <Label fx:id="accelerationNumValue" text="Acceleration x" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                           <GridPane.margin>
+                              <Insets left="10.0" top="160.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ProgressBar fx:id="handlingProgBar" maxHeight="20.0" prefWidth="200.0" progress="0.44" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                           <GridPane.margin>
+                              <Insets left="10.0" right="10.0" top="230.0" />
+                           </GridPane.margin>
+                        </ProgressBar>
+                        <Label fx:id="handlingNumValue" text="Handling x" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                           <GridPane.margin>
+                              <Insets left="10.0" top="210.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <ProgressBar fx:id="reliabilityProgBar" maxHeight="20.0" prefWidth="200.0" progress="0.44" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets bottom="5.0" left="10.0" right="10.0" />
+                           </GridPane.margin>
+                        </ProgressBar>
+                        <Label fx:id="reliabilityNumValue" text="Reliability x" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" top="235.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label fx:id="wallet" text="Wallet: $" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                           <GridPane.margin>
+                              <Insets right="10.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="Lucida Bright" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Fuel Upgrade Shop">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <GridPane layoutX="1.0" layoutY="3.0" prefHeight="368.0" prefWidth="600.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="453.5" minWidth="10.0" prefWidth="197.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.5" minWidth="10.0" prefWidth="211.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.5" minWidth="10.0" prefWidth="193.5" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="116.5" minHeight="0.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="246.0" minHeight="10.0" prefHeight="43.5" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="265.0" minHeight="10.0" prefHeight="140.5" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="265.0" minHeight="10.0" prefHeight="143.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="wallet1" alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="83.0" text="Wallet: $" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
+                           <font>
+                              <Font name="Lucida Bright" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label text="Pimp My Cart" textAlignment="CENTER">
+                           <font>
+                              <Font name="Lucida Bright Italic" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label text="Fuel Tank's" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                           <GridPane.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="Selected cart:" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label prefHeight="24.0" prefWidth="176.0" text="(Upgrades will only apply to your selected cart!)" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+                           <font>
+                              <Font size="8.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="130.0" fitWidth="152.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+                           <image>
+                              <Image url="@../images/default_cart.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="20.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <Button mnemonicParsing="false" text="&gt;" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+                        <Button mnemonicParsing="false" text="&lt;" GridPane.rowIndex="3" />
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../images/2L_fuel.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../images/5L_fuel.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../images/10L_fuel.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Stats" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
+                        <ProgressBar fx:id="topSpeedProgBar1" maxHeight="10.0" prefWidth="200.0" progress="0.44" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </ProgressBar>
+                     </children>
+                  </GridPane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
